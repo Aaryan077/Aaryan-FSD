@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aaryan Chaudhary - Full Stack Developer ePortfolio demonstrating HTML, CSS, Bootstrap, and JavaScript skills." />
+  <title>Aaryan Chaudhary | Full Stack ePortfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ======================== NAVBAR ======================== -->
+  <nav class="navbar navbar-expand-lg fixed-top glass-nav" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand brand-logo" href="#hero">
+        <span class="brand-bracket">&lt;</span>Aaryan_Chaudhary<span class="brand-slash">/</span><span class="brand-bracket">&gt;</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link nav-pill" href="#fullstack">Full Stack</a></li>
+          <li class="nav-item"><a class="nav-link nav-pill" href="#html-section">HTML</a></li>
+          <li class="nav-item"><a class="nav-link nav-pill" href="#css-section">CSS</a></li>
+          <li class="nav-item"><a class="nav-link nav-pill" href="#bootstrap-section">Bootstrap</a></li>
+          <li class="nav-item"><a class="nav-link nav-pill" href="#js-section">JavaScript</a></li>
+          <li class="nav-item"><a class="nav-link nav-pill active-pill" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ======================== HERO ======================== -->
+  <section id="hero" class="hero-section">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+    <div class="container hero-content">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-7">
+          <div class="hero-badge mb-3">
+            <i class="bi bi-code-slash me-2"></i>Full Stack Development Portfolio
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Aaryan</span><br/>
+            <span class="typing-wrapper">
+              <span id="typingText" class="typing-text"></span><span class="cursor-blink">|</span>
+            </span>
+          </h1>
+          <p class="hero-desc">
+            A passionate beginner full stack developer documenting my journey through web technologies. 
+            This ePortfolio showcases my understanding of <strong>HTML, CSS, Bootstrap</strong> and <strong>JavaScript</strong> — 
+            the building blocks of the modern web.
+          </p>
+          <div class="hero-actions">
+            <a href="#fullstack" class="btn btn-primary-glow me-3">
+              <i class="bi bi-rocket-takeoff me-2"></i>Explore Portfolio
+            </a>
+            <a href="#contact" class="btn btn-outline-glow">
+              <i class="bi bi-envelope me-2"></i>Get In Touch
+            </a>
+          </div>
+          <div class="hero-stats mt-5">
+            <div class="stat-item">
+              <span class="stat-number">5</span>
+              <span class="stat-label">Key Topics</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Live Demos</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Passion</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 d-flex justify-content-center">
+          <div class="hero-card-float">
+            <div class="floating-code-card">
+              <div class="code-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="code-lang ms-2">script.js</span>
+              </div>
+              <pre class="code-snippet"><code><span class="c-kw">const</span> <span class="c-var">aaryan</span> = {
+  <span class="c-key">name</span>: <span class="c-str">"Aaryan Chaudhary"</span>,
+  <span class="c-key">role</span>: <span class="c-str">"Full Stack Dev"</span>,
+  <span class="c-key">skills</span>: [
+    <span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>,
+    <span class="c-str">"Bootstrap"</span>, <span class="c-str">"JS"</span>
+  ],
+  <span class="c-key">passion</span>: <span class="c-str">"Building the web"</span>
+};
+<span class="c-fn">console</span>.<span class="c-fn">log</span>(<span class="c-str">"Hello, World! 👋"</span>);</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="scroll-indicator" href="#fullstack" aria-label="Scroll to explore">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </a>
+  </section>
+  <!-- ======================== SECTION 1: FULL STACK ======================== -->
+  <section id="fullstack" class="portfolio-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-number">01</div>
+        <h2 class="section-title">What is <span class="gradient-text">Full Stack Development?</span></h2>
+        <p class="section-subtitle">Understanding the complete web development ecosystem — from client to server.</p>
+      </div>
+      <!-- Explanation Cards -->
+      <div class="row g-4 mb-5">
+        <div class="col-md-4">
+          <div class="concept-card" id="card-frontend">
+            <div class="concept-icon"><i class="bi bi-display"></i></div>
+            <h3>Frontend</h3>
+            <p>Everything the user <strong>sees and interacts with</strong> in the browser. Built with HTML (structure), CSS (style), and JavaScript (behaviour).</p>
+            <div class="concept-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">React</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="concept-card" id="card-backend">
+            <div class="concept-icon"><i class="bi bi-server"></i></div>
+            <h3>Backend</h3>
+            <p>The <strong>server-side logic</strong> that processes data, handles authentication, and communicates with databases behind the scenes.</p>
+            <div class="concept-tags">
+              <span class="tag">Node.js</span><span class="tag">Python</span><span class="tag">PHP</span><span class="tag">APIs</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="concept-card" id="card-db">
+            <div class="concept-icon"><i class="bi bi-database"></i></div>
+            <h3>Database</h3>
+            <p>Where <strong>data is stored, retrieved and managed</strong> persistently. Can be relational (SQL) or non-relational (NoSQL).</p>
+            <div class="concept-tags">
+              <span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Architecture Diagram -->
+      <div class="architecture-demo glass-card p-4 p-md-5 mb-5">
+        <h4 class="demo-title mb-4"><i class="bi bi-diagram-3 me-2"></i>Interactive Full Stack Architecture</h4>
+        <div class="arch-diagram" id="archDiagram">
+          <div class="arch-layer" id="layer-user">
+            <div class="arch-node user-node">
+              <i class="bi bi-person-fill"></i>
+              <span>User / Browser</span>
+            </div>
+          </div>
+          <div class="arch-arrows">
+            <div class="arch-arrow-group">
+              <div class="arch-arrow-line">
+                <span class="arrow-label">HTTP Request</span>
+                <div class="arrow-line arrow-right"></div>
+              </div>
+              <div class="arch-arrow-line">
+                <div class="arrow-line arrow-left"></div>
+                <span class="arrow-label">HTML/CSS/JS Response</span>
+              </div>
+            </div>
+          </div>
+          <div class="arch-layer" id="layer-frontend">
+            <div class="arch-node frontend-node" onclick="showLayerInfo('frontend')">
+              <i class="bi bi-window"></i>
+              <span>Frontend</span>
+              <small>HTML · CSS · JS</small>
+            </div>
+          </div>
+          <div class="arch-arrows">
+            <div class="arch-arrow-group">
+              <div class="arch-arrow-line">
+                <span class="arrow-label">API Call (fetch)</span>
+                <div class="arrow-line arrow-right"></div>
+              </div>
+              <div class="arch-arrow-line">
+                <div class="arrow-line arrow-left"></div>
+                <span class="arrow-label">JSON Data</span>
+              </div>
+            </div>
+          </div>
+          <div class="arch-layer" id="layer-backend">
+            <div class="arch-node backend-node" onclick="showLayerInfo('backend')">
+              <i class="bi bi-cpu"></i>
+              <span>Backend</span>
+              <small>Node.js · APIs</small>
+            </div>
+          </div>
+          <div class="arch-arrows">
+            <div class="arch-arrow-group">
+              <div class="arch-arrow-line">
+                <span class="arrow-label">SQL / Query</span>
+                <div class="arrow-line arrow-right"></div>
+              </div>
+              <div class="arch-arrow-line">
+                <div class="arrow-line arrow-left"></div>
+                <span class="arrow-label">Result Set</span>
+              </div>
+            </div>
+          </div>
+          <div class="arch-layer" id="layer-db">
+            <div class="arch-node db-node" onclick="showLayerInfo('db')">
+              <i class="bi bi-database-fill"></i>
+              <span>Database</span>
+              <small>MySQL · MongoDB</small>
+            </div>
+          </div>
+        </div>
+        <div id="layerInfo" class="layer-info-box mt-4"><span style="color:var(--text-muted);font-size:0.9rem"><i class="bi bi-hand-index me-2"></i>Click on any layer node above to learn more about it!</span></div>
+      </div>
+      <!-- Full Stack Role Breakdown -->
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="glass-card p-4 h-100">
+            <h4 class="mb-3"><i class="bi bi-person-badge me-2 text-primary-glow"></i>What does a Full Stack Developer do?</h4>
+            <ul class="fs-list">
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Design and build <strong>user interfaces</strong> using HTML, CSS, and frameworks like Bootstrap or React</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Write <strong>server-side logic</strong> using languages like JavaScript (Node.js), Python, or PHP</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Design and manage <strong>databases</strong> (relational & non-relational)</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Build and consume <strong>RESTful APIs</strong> to connect frontend and backend</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Handle <strong>deployment</strong> and hosting using cloud services</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Ensure <strong>security, performance</strong> and accessibility of web apps</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="glass-card p-4 h-100">
+            <h4 class="mb-3"><i class="bi bi-stack me-2 text-primary-glow"></i>The Technology Stack</h4>
+            <div class="tech-stack-visual">
+              <div class="stack-layer-vis presentation">
+                <span class="layer-icon">🖥️</span>
+                <div>
+                  <strong>Presentation Layer</strong>
+                  <small>HTML • CSS • Bootstrap • JavaScript</small>
+                </div>
+              </div>
+              <div class="stack-connector"></div>
+              <div class="stack-layer-vis logic">
+                <span class="layer-icon">⚙️</span>
+                <div>
+                  <strong>Business Logic Layer</strong>
+                  <small>Node.js • Express • REST APIs</small>
+                </div>
+              </div>
+              <div class="stack-connector"></div>
+              <div class="stack-layer-vis data">
+                <span class="layer-icon">🗄️</span>
+                <div>
+                  <strong>Data Layer</strong>
+                  <small>MySQL • MongoDB • PostgreSQL</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ======================== SECTION 2: HTML ======================== -->
+  <section id="html-section" class="portfolio-section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-number">02</div>
+        <h2 class="section-title"><span class="gradient-text-orange">HTML</span> — Structure of the Web</h2>
+        <p class="section-subtitle">HyperText Markup Language — the backbone that gives every webpage its structure and meaning.</p>
+      </div>
+      <!-- HTML Explanation -->
+      <div class="row g-4 mb-5">
+        <div class="col-lg-5">
+          <div class="glass-card p-4 h-100">
+            <h4 class="mb-3"><i class="bi bi-file-earmark-code me-2" style="color:#f97316"></i>What is HTML?</h4>
+            <p>HTML stands for <strong>HyperText Markup Language</strong>. It is the standard language used to create the <em>structure</em> of web pages. It uses <strong>elements</strong> and <strong>tags</strong> to define different parts of a web page such as headings, paragraphs, images, links, and forms.</p>
+            <h5 class="mt-4 mb-2">Key Concepts:</h5>
+            <ul class="concept-list">
+              <li><strong>Elements &amp; Tags</strong> — Building blocks like <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code></li>
+              <li><strong>Attributes</strong> — Extra info like <code>id</code>, <code>class</code>, <code>href</code>, <code>src</code></li>
+              <li><strong>Semantic HTML</strong> — Meaningful tags: <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code></li>
+              <li><strong>Forms</strong> — User input collection with <code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;button&gt;</code></li>
+              <li><strong>Tables</strong> — Structured data with <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code></li>
+              <li><strong>Media</strong> — Images &amp; video: <code>&lt;img&gt;</code>, <code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <!-- Live HTML Editor -->
+          <div class="glass-card p-4">
+            <h4 class="mb-3"><i class="bi bi-play-circle me-2" style="color:#f97316"></i>Live HTML Editor — Try It Yourself!</h4>
+            <p class="text-muted small mb-3">Edit the HTML below and see the result update in real-time on the right.</p>
+            <div class="live-editor-container">
+              <div class="editor-pane">
+                <div class="editor-header">
+                  <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+                  <span class="editor-title ms-2">index.html</span>
+                </div>
+                <textarea id="htmlEditor" class="code-editor" spellcheck="false" rows="14"><!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
+  <style>
+    /* Setting a crisp white background for the whole page */
+    body {
+      background-color: #ffffff;
+      color: #222222; /* Charcoal text for comfortable reading contrast */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    header {
+      margin-bottom: 25px;
+      border-bottom: 1px solid #eeeeee;
+      padding-bottom: 15px;
+    }
+
+    nav a {
+      color: #6c63ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 600px;
+    }
+
+    figure {
+      margin: 20px 0;
+      padding: 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    figcaption {
+      font-size: 0.9rem;
+      color: #666666;
+      margin-top: 8px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 20px;
+    }
+
+    footer {
+      margin-top: 40px;
+      border-top: 1px solid #eeeeee;
+      padding-top: 15px;
+      font-size: 0.9rem;
+      color: #777777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Website</h1>
+    <nav>
+      <a href="#">Home</a> |
+      <a href="#">About</a>
+    </nav>
+  </header>
+  
+  <main>
+    <p>This is a <strong>paragraph</strong> with <em>italic text</em> and a <a href="#">hyperlink</a>.</p>
+    
+    <img src="https://via.placeholder.com/150x80/6c63ff/fff?text=Image" alt="Demo Image" />
+    
+    <p>Travel opens up the world, introducing us to breathtaking landscapes, rich cultures, and unforgettable adventures down the open road.</p>
+    
+    <figure>
+      <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=400&h=250" alt="Scenic road trip adventure" />
+      <figcaption>Chasing new horizons and scenic routes.</figcaption>
+    </figure>
+
+    <ul>
+      <li>HTML List Item 1</li>
+      <li>HTML List Item 2</li>
+    </ul>
+  </main>
+  
+  <footer>
+    <p>© 2026 Aaryan</p>
+  </footer>
+
+</body>
+</html>
+</html></textarea>
+              </div>
+              <div class="preview-pane">
+                <div class="editor-header">
+                  <i class="bi bi-eye me-1"></i><span class="editor-title">Preview</span>
+                </div>
+                <iframe id="htmlPreview" class="preview-frame" sandbox="allow-scripts allow-same-origin"></iframe>
+              </div>
+            </div>
+            <button class="btn btn-sm btn-orange mt-2" onclick="runHtmlEditor()"><i class="bi bi-play-fill me-1"></i>Run / Refresh Preview</button>
+          </div>
+        </div>
+      </div>
+      <!-- HTML Semantic Tags Demo -->
+      <div class="glass-card p-4 p-md-5 mb-4">
+        <h4 class="demo-title mb-4"><i class="bi bi-layout-text-window me-2" style="color:#f97316"></i>HTML Semantic Structure Demo</h4>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="semantic-layout">
+              <div class="sem-header">
+                <code>&lt;header&gt;</code>
+                <span>Site Header / Logo / Nav</span>
+              </div>
+              <div class="sem-nav">
+                <code>&lt;nav&gt;</code>
+                <span>Navigation Links</span>
+              </div>
+              <div class="sem-body">
+                <div class="sem-main">
+                  <code>&lt;main&gt;</code>
+                  <div class="sem-article">
+                    <code>&lt;article&gt;</code>
+                    <span>Main Content</span>
+                  </div>
+                </div>
+                <div class="sem-aside">
+                  <code>&lt;aside&gt;</code>
+                  <span>Sidebar</span>
+                </div>
+              </div>
+              <div class="sem-footer">
+                <code>&lt;footer&gt;</code>
+                <span>Footer Content</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h5>Why Use Semantic HTML?</h5>
+            <ul class="concept-list">
+              <li><strong>Accessibility</strong> — Screen readers can understand the page structure</li>
+              <li><strong>SEO</strong> — Search engines rank semantic pages higher</li>
+              <li><strong>Maintainability</strong> — Code is easier to read and maintain</li>
+              <li><strong>Clarity</strong> — Meaning is communicated through tag names</li>
+            </ul>
+            <h5 class="mt-4">HTML Forms Example:</h5>
+            <form class="html-demo-form" onsubmit="demoFormSubmit(event)">
+              <div class="mb-2">
+                <label for="demoName" class="form-label small">Your Name</label>
+                <input type="text" id="demoName" class="form-control form-control-sm" placeholder="e.g. Aaryan" required />
+              </div>
+              <div class="mb-2">
+                <label for="demoEmail" class="form-label small">Email</label>
+                <input type="email" id="demoEmail" class="form-control form-control-sm" placeholder="your@email.com" required />
+              </div>
+              <button type="submit" class="btn btn-sm btn-orange"><i class="bi bi-send me-1"></i>Submit Form</button>
+              <div id="formResult" class="mt-2 small"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- HTML Tables Demo -->
+      <div class="glass-card p-4">
+        <h4 class="mb-3"><i class="bi bi-table me-2" style="color:#f97316"></i>HTML Tables</h4>
+        <p class="text-muted small">HTML tables organise data into rows and columns using <code>&lt;table&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code> and <code>&lt;td&gt;</code> tags.</p>
+        <div class="table-responsive">
+          <table class="table demo-table">
+            <thead>
+              <tr>
+                <th>HTML Element</th>
+                <th>Tag</th>
+                <th>Purpose</th>
+                <th>Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Heading</td><td><code>&lt;h1&gt;–&lt;h6&gt;</code></td><td>Page & section titles</td><td><strong>Title Text</strong></td></tr>
+              <tr><td>Paragraph</td><td><code>&lt;p&gt;</code></td><td>Block of text</td><td>Normal paragraph text</td></tr>
+              <tr><td>Image</td><td><code>&lt;img&gt;</code></td><td>Embed images</td><td><code>src="photo.jpg"</code></td></tr>
+              <tr><td>Link</td><td><code>&lt;a&gt;</code></td><td>Hyperlinks</td><td><a href="#" style="color:var(--accent-orange)">Click me</a></td></tr>
+              <tr><td>Division</td><td><code>&lt;div&gt;</code></td><td>Layout container</td><td>Groups elements</td></tr>
+              <tr><td>Span</td><td><code>&lt;span&gt;</code></td><td>Inline container</td><td><span style="color:var(--accent-purple)">Coloured text</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ======================== SECTION 3: CSS ======================== -->
+  <section id="css-section" class="portfolio-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-number">03</div>
+        <h2 class="section-title"><span class="gradient-text-blue">CSS</span> — Styling the Web</h2>
+        <p class="section-subtitle">Cascading Style Sheets — giving HTML its visual identity, layout, and animations.</p>
+      </div>
+      <div class="row g-4 mb-5">
+        <div class="col-lg-5">
+          <div class="glass-card p-4 h-100">
+            <h4 class="mb-3"><i class="bi bi-palette me-2" style="color:#3b82f6"></i>What is CSS?</h4>
+            <p>CSS stands for <strong>Cascading Style Sheets</strong>. It controls how HTML elements look on screen — from colours and fonts to layout and animations. Without CSS, websites would just be plain text on a white page.</p>
+            <h5 class="mt-4 mb-2">Key Concepts:</h5>
+            <ul class="concept-list">
+              <li><strong>Selectors</strong> — Target elements: <code>.class</code>, <code>#id</code>, <code>element</code></li>
+              <li><strong>Box Model</strong> — Margin, Border, Padding, Content</li>
+              <li><strong>Flexbox</strong> — One-dimensional layout</li>
+              <li><strong>CSS Grid</strong> — Two-dimensional layout</li>
+              <li><strong>Pseudo-classes</strong> — <code>:hover</code>, <code>:focus</code>, <code>:nth-child</code></li>
+              <li><strong>Animations</strong> — <code>@keyframes</code> and <code>transition</code></li>
+              <li><strong>Media Queries</strong> — Responsive design</li>
+              <li><strong>CSS Variables</strong> — Reusable values with <code>--variable</code></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <!-- Live CSS Editor -->
+          <div class="glass-card p-4">
+            <h4 class="mb-3"><i class="bi bi-play-circle me-2" style="color:#3b82f6"></i>Live CSS Playground</h4>
+            <p class="text-muted small mb-3">Edit the CSS to change the style of the preview card in real time.</p>
+            <div class="live-editor-container">
+              <div class="editor-pane">
+                <div class="editor-header">
+                  <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+                  <span class="editor-title ms-2">style.css</span>
+                </div>
+                <textarea id="cssEditor" class="code-editor" spellcheck="false" rows="14">.demo-card {
+  background: linear-gradient(
+    135deg, #6c63ff, #3b82f6
+  );
+  color: white;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  box-shadow: 0 10px 40px
+    rgba(108,99,255,0.4);
+  transition: transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.demo-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 20px 60px
+    rgba(108,99,255,0.6);
+}
+.demo-card h2 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+.demo-card p {
+  margin: 0;
+  opacity: 0.85;
+  font-size: 0.95rem;
+}</textarea>
+              </div>
+              <div class="preview-pane">
+                <div class="editor-header">
+                  <i class="bi bi-eye me-1"></i><span class="editor-title">Preview</span>
+                </div>
+                <iframe id="cssPreview" class="preview-frame" sandbox="allow-same-origin"></iframe>
+              </div>
+            </div>
+            <button class="btn btn-sm btn-blue mt-2" onclick="runCssEditor()"><i class="bi bi-play-fill me-1"></i>Apply CSS</button>
+          </div>
+        </div>
+      </div>
+      <!-- Box Model Demo -->
+      <div class="row g-4 mb-4">
+        <div class="col-lg-6">
+          <div class="glass-card p-4 h-100">
+            <h4 class="mb-4"><i class="bi bi-bounding-box me-2" style="color:#3b82f6"></i>The CSS Box Model</h4>
+            <div class="box-model-demo" id="boxModelDemo">
+              <div class="box-margin">
+                <span class="box-label">Margin</span>
+                <div class="box-border">
+                  <span class="box-label">Border</span>
+                  <div class="box-padding">
+                    <span class="box-label">Padding</span>
+                    <div class="box-content">
+                      <span>Content</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-controls mt-3">
+              <label class="small">Margin: <span id="marginValue">15px</span><input type="range" id="marginSlider" min="5" max="30" value="15" class="form-range form-range-sm" oninput="updateBoxModel()"></label>
+              <label class="small">Padding: <span id="paddingValue">20px</span><input type="range" id="paddingSlider" min="5" max="40" value="20" class="form-range form-range-sm" oninput="updateBoxModel()"></label>
+              <label class="small">Border: <span id="borderValue">4px</span><input type="range" id="borderSlider" min="1" max="15" value="4" class="form-range form-range-sm" oninput="updateBoxModel()"></label>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="glass-card p-4 h-100">
+            <h4 class="mb-3"><i class="bi bi-grid me-2" style="color:#3b82f6"></i>CSS Flexbox Demo</h4>
+            <div class="flex-controls mb-3">
+              <label class="small me-2">justify-content:</label>
+              <select id="flexJustify" class="form-select form-select-sm d-inline-block w-auto" onchange="updateFlex()">
+                <option value="flex-start">flex-start</option>
+                <option value="center" selected>center</option>
+                <option value="flex-end">flex-end</option>
+                <option value="space-between">space-between</option>
+                <option value="space-around">space-around</option>
+                <option value="space-evenly">space-evenly</option>
+              </select>
+              <label class="small me-2 ms-3">align-items:</label>
+              <select id="flexAlign" class="form-select form-select-sm d-inline-block w-auto" onchange="updateFlex()">
+                <option value="stretch">stretch</option>
+                <option value="flex-start">flex-start</option>
+                <option value="center" selected>center</option>
+                <option value="flex-end">flex-end</option>
+              </select>
+            </div>
+            <div id="flexDemo" class="flex-demo-box">
+              <div class="flex-item">1</div>
+              <div class="flex-item tall">2</div>
+              <div class="flex-item">3</div>
+              <div class="flex-item">4</div>
+            </div>
+            <div class="mt-3">
+              <label class="small me-2">flex-direction:</label>
+              <div class="btn-group btn-group-sm flex-direction-group">
+                <button class="btn btn-outline-primary active" onclick="setFlexDir('row', this)">row</button>
+                <button class="btn btn-outline-primary" onclick="setFlexDir('column', this)">column</button>
+                <button class="btn btn-outline-primary" onclick="setFlexDir('row-reverse', this)">row-reverse</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CSS Animations Demo -->
+      <div class="glass-card p-4">
+        <h4 class="mb-4"><i class="bi bi-stars me-2" style="color:#3b82f6"></i>CSS Animations & Transitions</h4>
+          <div class="row g-3">
+          <div class="col-6 col-md-3 text-center">
+            <div class="anim-demo" id="anim-pulse"><div class="anim-box pulse-anim" role="button" tabindex="0" aria-pressed="false" data-color="1"></div></div>
+            <code class="small">animation: pulse</code>
+          </div>
+          <div class="col-6 col-md-3 text-center">
+            <div class="anim-demo" id="anim-spin"><div class="anim-box spin-anim" role="button" tabindex="0" aria-pressed="false" data-color="2"></div></div>
+            <code class="small">animation: rotate</code>
+          </div>
+          <div class="col-6 col-md-3 text-center">
+            <div class="anim-demo" id="anim-bounce"><div class="anim-box bounce-anim" role="button" tabindex="0" aria-pressed="false" data-color="3"></div></div>
+            <code class="small">animation: bounce</code>
+          </div>
+          <div class="col-6 col-md-3 text-center">
+            <div class="anim-demo" id="anim-slide"><div class="anim-box slide-anim" role="button" tabindex="0" aria-pressed="false" data-color="4"></div></div>
+            <code class="small">animation: slide</code>
+          </div>
+        </div>
+        <div class="mt-4">
+          <h5>Media Queries — Responsive Design</h5>
+          <p class="text-muted small">Resize your browser window to see the responsive grid below adapt!</p>
+          <div class="responsive-demo-grid">
+            <div class="resp-item">Col 1</div>
+            <div class="resp-item">Col 2</div>
+            <div class="resp-item">Col 3</div>
+            <div class="resp-item">Col 4</div>
+          </div>
+          <div class="viewport-indicator mt-2 text-center">
+            <span id="viewportLabel" class="badge">— Viewport —</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ======================== SECTION 4: BOOTSTRAP ======================== -->
+  <section id="bootstrap-section" class="portfolio-section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-number">04</div>
+        <h2 class="section-title"><span class="gradient-text-purple">Bootstrap</span> — CSS Framework</h2>
+        <p class="section-subtitle">The world's most popular frontend framework — build responsive, mobile-first websites faster.</p>
+        <div class="glass-card p-4 mt-4 text-start" style="max-width:860px;margin:0 auto;border-left:4px solid rgba(124,58,237,0.6)">
+          <h5 class="mb-2"><i class="bi bi-journal-text me-2" style="color:#a78bfa"></i>Why I find Bootstrap valuable</h5>
+          <p class="text-muted mb-0" style="font-size:0.95rem">Before learning Bootstrap, every responsive layout required writing extensive CSS media queries by hand — a slow and error-prone process. Bootstrap solves this by providing a <strong>consistent, mobile-first grid system</strong> and a library of pre-built components that work out of the box. Rather than reinventing common UI patterns like navbars, modals, and alerts, I can focus on the unique parts of my project. The utility classes (<code>d-flex</code>, <code>gap-3</code>, <code>text-center</code>, etc.) have also taught me to think about layout in a structured, systematic way. This portfolio itself is built on Bootstrap 5 — every section uses the grid, breakpoints, and component classes to achieve a responsive layout without a single media query written from scratch.</p>
+        </div>
+      </div>
+      <div class="row g-4 mb-5">
+        <div class="col-lg-5">
+          <div class="glass-card p-4 h-100">
+            <h4 class="mb-3"><i class="bi bi-bootstrap me-2" style="color:#7c3aed"></i>What is Bootstrap?</h4>
+            <p>Bootstrap is a free, open-source <strong>CSS framework</strong> developed by Twitter. It provides a collection of pre-built <strong>CSS classes, components, and JavaScript plugins</strong> that make building responsive websites faster and easier.</p>
+            <p>Instead of writing CSS from scratch, Bootstrap provides ready-to-use classes like <code>d-flex</code>, <code>text-center</code>, or <code>btn btn-primary</code>.</p>
+            <h5 class="mt-4 mb-2">Key Features:</h5>
+            <ul class="concept-list">
+              <li><strong>Grid System</strong> — 12-column responsive layout</li>
+              <li><strong>Utility Classes</strong> — Spacing, colours, display helpers</li>
+              <li><strong>Components</strong> — Navbar, Cards, Modals, Alerts, Badges</li>
+              <li><strong>Breakpoints</strong> — <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, <code>xxl</code></li>
+              <li><strong>JS Plugins</strong> — Dropdown, Carousel, Collapse, Toast</li>
+              <li><strong>Mobile-First</strong> — Designed for small screens first</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="glass-card p-4 h-100">
+            <h4 class="mb-3"><i class="bi bi-grid-3x3 me-2" style="color:#7c3aed"></i>Bootstrap Grid System — Live Demo</h4>
+            <p class="text-muted small mb-3">Bootstrap divides the page into <strong>12 columns</strong>. You can assign how many columns each element takes at each breakpoint.</p>
+            <div class="bs-grid-visual mb-3">
+              <div class="row g-2 mb-2">
+                <div class="col-12"><div class="bs-col-demo">col-12 (Full Width)</div></div>
+              </div>
+              <div class="row g-2 mb-2">
+                <div class="col-6"><div class="bs-col-demo">col-6</div></div>
+                <div class="col-6"><div class="bs-col-demo">col-6</div></div>
+              </div>
+              <div class="row g-2 mb-2">
+                <div class="col-4"><div class="bs-col-demo">col-4</div></div>
+                <div class="col-4"><div class="bs-col-demo">col-4</div></div>
+                <div class="col-4"><div class="bs-col-demo">col-4</div></div>
+              </div>
+              <div class="row g-2 mb-2">
+                <div class="col-3"><div class="bs-col-demo">3</div></div>
+                <div class="col-3"><div class="bs-col-demo">3</div></div>
+                <div class="col-3"><div class="bs-col-demo">3</div></div>
+                <div class="col-3"><div class="bs-col-demo">3</div></div>
+              </div>
+              <div class="row g-2">
+                <div class="col-8"><div class="bs-col-demo">col-8</div></div>
+                <div class="col-4"><div class="bs-col-demo">col-4</div></div>
+              </div>
+            </div>
+            <div class="bs-breakpoints">
+              <h6 class="mb-2">Responsive Breakpoints:</h6>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-secondary">xs: &lt;576px</span>
+                <span class="badge bg-info text-dark">sm: ≥576px</span>
+                <span class="badge bg-success">md: ≥768px</span>
+                <span class="badge bg-warning text-dark">lg: ≥992px</span>
+                <span class="badge bg-danger">xl: ≥1200px</span>
+                <span class="badge bg-primary">xxl: ≥1400px</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Bootstrap Components Demo -->
+      <div class="glass-card p-4 p-md-5 mb-4">
+        <h4 class="demo-title mb-4"><i class="bi bi-puzzle me-2" style="color:#7c3aed"></i>Bootstrap Components in Action</h4>
+        <!-- Alerts -->
+        <h5 class="mb-3">Bootstrap Alerts</h5>
+        <div class="row g-2 mb-4">
+          <div class="col-md-6"><div class="alert alert-primary" role="alert"><i class="bi bi-info-circle me-2"></i>This is a <strong>primary</strong> Bootstrap alert!</div></div>
+          <div class="col-md-6"><div class="alert alert-success" role="alert"><i class="bi bi-check-circle me-2"></i>This is a <strong>success</strong> Bootstrap alert!</div></div>
+          <div class="col-md-6"><div class="alert alert-warning" role="alert"><i class="bi bi-exclamation-triangle me-2"></i>This is a <strong>warning</strong> Bootstrap alert!</div></div>
+          <div class="col-md-6"><div class="alert alert-danger" role="alert"><i class="bi bi-x-circle me-2"></i>This is a <strong>danger</strong> Bootstrap alert!</div></div>
+        </div>
+        <!-- Buttons -->
+        <h5 class="mb-3">Bootstrap Buttons</h5>
+        <div id="bootstrapButtonDemo" class="mb-4">
+          <button type="button" class="btn btn-primary me-2 mb-2">Primary</button>
+          <button type="button" class="btn btn-secondary me-2 mb-2">Secondary</button>
+          <button type="button" class="btn btn-success me-2 mb-2">Success</button>
+          <button type="button" class="btn btn-danger me-2 mb-2">Danger</button>
+          <button type="button" class="btn btn-warning me-2 mb-2">Warning</button>
+          <button type="button" class="btn btn-info me-2 mb-2">Info</button>
+          <button type="button" class="btn btn-light text-dark me-2 mb-2">Light</button>
+          <button type="button" class="btn btn-dark me-2 mb-2">Dark</button>
+          <button type="button" class="btn btn-link me-2 mb-2">Link</button>
+          <button type="button" class="btn btn-outline-primary me-2 mb-2">Outline</button>
+          <button type="button" class="btn btn-outline-secondary me-2 mb-2">Outline Secondary</button>
+          <button type="button" class="btn btn-lg btn-primary me-2 mb-2">Large</button>
+          <button type="button" class="btn btn-sm btn-primary mb-2">Small</button>
+        </div>
+        <!-- Badges & Cards -->
+        <div class="row g-3 mb-4">
+          <div class="col-md-6">
+            <h5 class="mb-3">Bootstrap Badges & Progress</h5>
+            <p><span class="badge bg-primary me-1">HTML</span><span class="badge bg-success me-1">CSS</span><span class="badge bg-warning text-dark me-1">Bootstrap</span><span class="badge bg-info text-dark">JS</span></p>
+            <div class="mb-2">
+              <label class="small mb-1">HTML Progress</label>
+              <div class="progress" style="height:12px">
+                <div class="progress-bar bg-warning" role="progressbar" style="width:85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+              </div>
+            </div>
+            <div class="mb-2">
+              <label class="small mb-1">CSS Progress</label>
+              <div class="progress" style="height:12px">
+                <div class="progress-bar bg-info" role="progressbar" style="width:78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">78%</div>
+              </div>
+            </div>
+            <div class="mb-2">
+              <label class="small mb-1">JavaScript Progress</label>
+              <div class="progress" style="height:12px">
+                <div class="progress-bar bg-success" role="progressbar" style="width:70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h5 class="mb-3">Bootstrap Cards</h5>
+            <div class="card" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);color:inherit">
+              <div class="card-header" style="background:rgba(124,58,237,0.2);border-bottom:1px solid rgba(255,255,255,0.1)">
+                <strong>Bootstrap Card Component</strong>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text text-muted small">Cards are Bootstrap's flexible content containers. They include options for headers, footers, content and more.</p>
+                <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+              </div>
+              <div class="card-footer text-muted small" style="background:rgba(255,255,255,0.03);border-top:1px solid rgba(255,255,255,0.1)">
+                Card Footer
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Bootstrap Accordion + Toast -->
+      <div class="row g-4 mb-4">
+        <div class="col-lg-6">
+          <div class="glass-card p-4 h-100">
+            <h4 class="mb-3"><i class="bi bi-chevron-bar-expand me-2" style="color:#7c3aed"></i>Bootstrap Accordion</h4>
+            <p class="text-muted small mb-3">Accordions use Bootstrap's <code>collapse</code> plugin to show/hide content panels — no custom JS needed.</p>
+            <div class="accordion" id="demoAccordion">
+              <div class="accordion-item" style="background:rgba(124,58,237,0.08);border:1px solid rgba(124,58,237,0.25);border-radius:10px;margin-bottom:6px;overflow:hidden">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc1" aria-expanded="false" style="background:rgba(124,58,237,0.12);color:var(--text-primary);box-shadow:none;border-radius:10px">
+                    What is Bootstrap's Grid System?
+                  </button>
+                </h2>
+                <div id="acc1" class="accordion-collapse collapse" data-bs-parent="#demoAccordion">
+                  <div class="accordion-body" style="color:var(--text-muted);font-size:0.9rem">
+                    Bootstrap divides the page into <strong>12 columns</strong>. You use classes like <code>col-md-6</code> to specify how wide an element should be at each breakpoint — enabling fully responsive layouts.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item" style="background:rgba(124,58,237,0.08);border:1px solid rgba(124,58,237,0.25);border-radius:10px;margin-bottom:6px;overflow:hidden">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc2" aria-expanded="false" style="background:rgba(124,58,237,0.12);color:var(--text-primary);box-shadow:none;border-radius:10px">
+                    Why use Bootstrap instead of custom CSS?
+                  </button>
+                </h2>
+                <div id="acc2" class="accordion-collapse collapse" data-bs-parent="#demoAccordion">
+                  <div class="accordion-body" style="color:var(--text-muted);font-size:0.9rem">
+                    Bootstrap provides <strong>pre-built responsive utilities</strong>, consistent cross-browser behaviour, and dozens of ready-to-use components — saving hundreds of hours compared to building everything from scratch.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item" style="background:rgba(124,58,237,0.08);border:1px solid rgba(124,58,237,0.25);border-radius:10px;overflow:hidden">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc3" aria-expanded="false" style="background:rgba(124,58,237,0.12);color:var(--text-primary);box-shadow:none;border-radius:10px">
+                    What does "mobile-first" mean?
+                  </button>
+                </h2>
+                <div id="acc3" class="accordion-collapse collapse" data-bs-parent="#demoAccordion">
+                  <div class="accordion-body" style="color:var(--text-muted);font-size:0.9rem">
+                    Mobile-first means you <strong>design for small screens first</strong>, then use media queries to progressively enhance the layout for larger screens. Bootstrap's breakpoints follow this approach — <code>col-sm</code> targets phones, <code>col-lg</code> targets desktops.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="glass-card p-4 h-100">
+            <h4 class="mb-3"><i class="bi bi-bell me-2" style="color:#7c3aed"></i>Bootstrap Toast Notifications</h4>
+            <p class="text-muted small mb-3">Toasts are lightweight <strong>push notifications</strong>. Bootstrap handles show/hide with JavaScript — triggered by a single method call.</p>
+            <div class="d-flex flex-wrap gap-2 mb-4">
+              <button class="btn btn-success btn-sm" onclick="showToast('toastSuccess')"><i class="bi bi-check-circle me-1"></i>Success Toast</button>
+              <button class="btn btn-danger btn-sm" onclick="showToast('toastError')"><i class="bi bi-x-circle me-1"></i>Error Toast</button>
+              <button class="btn btn-warning btn-sm text-dark" onclick="showToast('toastWarning')"><i class="bi bi-exclamation-triangle me-1"></i>Warning Toast</button>
+              <button class="btn btn-info btn-sm text-dark" onclick="showToast('toastInfo')"><i class="bi bi-info-circle me-1"></i>Info Toast</button>
+            </div>
+            <pre class="code-block-demo" style="font-size:0.75rem"><code><span class="c-comment">// Show a Bootstrap toast with JS</span>
+<span class="c-kw">const</span> <span class="c-var">toastEl</span> = document.<span class="c-fn">getElementById</span>(<span class="c-str">'myToast'</span>);
+<span class="c-kw">const</span> <span class="c-var">toast</span> = <span class="c-kw">new</span> bootstrap.<span class="c-fn">Toast</span>(<span class="c-var">toastEl</span>);
+<span class="c-var">toast</span>.<span class="c-fn">show</span>();</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toast Elements (positioned fixed) -->
+      <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index:1200">
+        <div id="toastSuccess" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="3000">
+          <div class="d-flex">
+            <div class="toast-body"><i class="bi bi-check-circle-fill me-2"></i><strong>Success!</strong> Operation completed successfully.</div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+        </div>
+        <div id="toastError" class="toast align-items-center text-bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="3000">
+          <div class="d-flex">
+            <div class="toast-body"><i class="bi bi-x-circle-fill me-2"></i><strong>Error!</strong> Something went wrong. Please try again.</div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+        </div>
+        <div id="toastWarning" class="toast align-items-center text-bg-warning border-0" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="3000">
+          <div class="d-flex">
+            <div class="toast-body text-dark"><i class="bi bi-exclamation-triangle-fill me-2"></i><strong>Warning!</strong> Please check your input before proceeding.</div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+        </div>
+        <div id="toastInfo" class="toast align-items-center text-bg-info border-0" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="3000">
+          <div class="d-flex">
+            <div class="toast-body text-dark"><i class="bi bi-info-circle-fill me-2"></i><strong>Info:</strong> This is a Bootstrap Toast notification component.</div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+        </div>
+        <div id="toastButtonAction" class="toast align-items-center text-bg-dark border-0" role="alert" aria-live="polite" aria-atomic="true" data-bs-delay="2000">
+          <div class="d-flex">
+            <div class="toast-body text-white"><i class="bi bi-mouse-fill me-2"></i>Button clicked</div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bootstrap Modal Demo -->
+      <div class="glass-card p-4 mb-4">
+        <h4 class="mb-3"><i class="bi bi-window-stack me-2" style="color:#7c3aed"></i>Bootstrap Modal Component</h4>
+        <p class="text-muted small mb-3">Modals are one of Bootstrap's most powerful components. They create <strong>overlay dialog boxes</strong> without writing any custom JavaScript — Bootstrap handles the show/hide behaviour entirely through <code>data-bs-toggle</code> attributes and its built-in JS bundle.</p>
+        <button class="btn btn-primary me-2 mb-3" data-bs-toggle="modal" data-bs-target="#demoModal">
+          <i class="bi bi-box-arrow-up-right me-2"></i>Open Demo Modal
+        </button>
+        <button class="btn btn-outline-secondary mb-3" data-bs-toggle="modal" data-bs-target="#demoModal2">
+          <i class="bi bi-exclamation-triangle me-2"></i>Open Confirm Dialog
+        </button>
+        <pre class="code-block-demo"><code><span class="c-comment">&lt;!-- Trigger button - no JS needed! --&gt;</span>
+<span class="c-tag">&lt;button</span> <span class="c-attr">data-bs-toggle</span>=<span class="c-str">"modal"</span> <span class="c-attr">data-bs-target</span>=<span class="c-str">"#myModal"</span><span class="c-tag">&gt;</span>Open Modal<span class="c-tag">&lt;/button&gt;</span>
+
+<span class="c-comment">&lt;!-- Modal markup --&gt;</span>
+<span class="c-tag">&lt;div</span> <span class="c-attr">class</span>=<span class="c-str">"modal fade"</span> <span class="c-attr">id</span>=<span class="c-str">"myModal"</span><span class="c-tag">&gt;</span>
+  <span class="c-tag">&lt;div</span> <span class="c-attr">class</span>=<span class="c-str">"modal-dialog"</span><span class="c-tag">&gt;</span>
+    <span class="c-tag">&lt;div</span> <span class="c-attr">class</span>=<span class="c-str">"modal-content"</span><span class="c-tag">&gt;</span>
+      <span class="c-tag">&lt;div</span> <span class="c-attr">class</span>=<span class="c-str">"modal-header"</span><span class="c-tag">&gt;</span>...<span class="c-tag">&lt;/div&gt;</span>
+      <span class="c-tag">&lt;div</span> <span class="c-attr">class</span>=<span class="c-str">"modal-body"</span><span class="c-tag">&gt;</span>...<span class="c-tag">&lt;/div&gt;</span>
+      <span class="c-tag">&lt;div</span> <span class="c-attr">class</span>=<span class="c-str">"modal-footer"</span><span class="c-tag">&gt;</span>...<span class="c-tag">&lt;/div&gt;</span>
+    <span class="c-tag">&lt;/div&gt;</span>
+  <span class="c-tag">&lt;/div&gt;</span>
+<span class="c-tag">&lt;/div&gt;</span></code></pre>
+      </div>
+
+      <!-- Modal 1: Info Modal -->
+      <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content" style="background:#1a1a2e;border:1px solid rgba(124,58,237,0.4);color:inherit">
+            <div class="modal-header" style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(124,58,237,0.2)">
+              <h5 class="modal-title" id="demoModalLabel"><i class="bi bi-bootstrap me-2" style="color:#a78bfa"></i>Bootstrap Modal — Demo</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>This modal is powered entirely by <strong>Bootstrap 5</strong>. No custom JavaScript was written to open or close it — Bootstrap handles all of that automatically via <code>data-bs-toggle="modal"</code> attributes.</p>
+              <h6 class="mt-3 mb-2">Why use Bootstrap Modals?</h6>
+              <ul class="concept-list">
+                <li><strong>Zero JS required</strong> — Purely driven by HTML data attributes</li>
+                <li><strong>Accessible</strong> — ARIA attributes and keyboard focus are handled automatically</li>
+                <li><strong>Responsive</strong> — Works perfectly on all screen sizes</li>
+                <li><strong>Customisable</strong> — Sizes: <code>modal-sm</code>, <code>modal-lg</code>, <code>modal-xl</code></li>
+              </ul>
+            </div>
+            <div class="modal-footer" style="border-top:1px solid rgba(255,255,255,0.1)">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><i class="bi bi-check-lg me-1"></i>Got It!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 2: Confirm Dialog -->
+      <div class="modal fade" id="demoModal2" tabindex="-1" aria-labelledby="demoModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+          <div class="modal-content" style="background:#1a1a2e;border:1px solid rgba(239,68,68,0.4);color:inherit">
+            <div class="modal-header" style="border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(239,68,68,0.15)">
+              <h5 class="modal-title" id="demoModal2Label"><i class="bi bi-exclamation-triangle-fill me-2 text-warning"></i>Confirm Action</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="text-muted small">Are you sure you want to proceed? This demonstrates a Bootstrap confirm dialog modal.</p>
+            </div>
+            <div class="modal-footer" style="border-top:1px solid rgba(255,255,255,0.1)">
+              <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal">Confirm</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bootstrap Navbar Demo -->
+      <div class="glass-card p-4">
+        <h4 class="mb-3"><i class="bi bi-layout-text-window-reverse me-2" style="color:#7c3aed"></i>Bootstrap Navbar Component</h4>
+        <p class="text-muted small mb-3">The navbar below is built entirely with Bootstrap classes — responsive, collapsible, and mobile-friendly.</p>
+        <nav class="navbar navbar-expand-md navbar-dark rounded-3 p-3 mb-3" style="background:rgba(124,58,237,0.25);border:1px solid rgba(124,58,237,0.3)">
+          <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">Bootstrap Site</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#demoNav" aria-controls="demoNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="demoNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                  <ul class="dropdown-menu" style="background:#1a1a2e;border:1px solid rgba(255,255,255,0.15)">
+                    <li><a class="dropdown-item text-white" href="#">Project 1</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Project 2</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div id="demoNavStatus" class="alert alert-secondary py-2 mb-3">Selected: Home</div>
+        <pre class="code-block-demo"><code><span class="c-comment">&lt;!-- Bootstrap Navbar - key classes --&gt;</span>
+<span class="c-tag">&lt;nav</span> <span class="c-attr">class</span>=<span class="c-str">"navbar navbar-expand-md navbar-dark"</span><span class="c-tag">&gt;</span>
+  <span class="c-tag">&lt;a</span> <span class="c-attr">class</span>=<span class="c-str">"navbar-brand"</span> <span class="c-attr">href</span>=<span class="c-str">"#"</span><span class="c-tag">&gt;</span>Brand<span class="c-tag">&lt;/a&gt;</span>
+  <span class="c-tag">&lt;button</span> <span class="c-attr">class</span>=<span class="c-str">"navbar-toggler"</span> <span class="c-attr">data-bs-toggle</span>=<span class="c-str">"collapse"</span><span class="c-tag">&gt;</span>...
+  <span class="c-tag">&lt;div</span> <span class="c-attr">class</span>=<span class="c-str">"collapse navbar-collapse"</span><span class="c-tag">&gt;</span>...
+<span class="c-tag">&lt;/nav&gt;</span></code></pre>
+      </div>
+    </div>
+  </section>
+  <!-- ======================== SECTION 5: JAVASCRIPT ======================== -->
+  <section id="js-section" class="portfolio-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-number">05</div>
+        <h2 class="section-title"><span class="gradient-text-yellow">JavaScript</span> — The Web's Language</h2>
+        <p class="section-subtitle">The programming language of the web — adding interactivity, logic, and dynamic behaviour.</p>
+      </div>
+      <div class="row g-4 mb-5">
+        <div class="col-lg-5">
+          <div class="glass-card p-4 h-100">
+            <h4 class="mb-3"><i class="bi bi-lightning me-2" style="color:#eab308"></i>What is JavaScript?</h4>
+            <p>JavaScript (JS) is a <strong>lightweight, interpreted programming language</strong> that runs in the browser. It is used to make web pages <em>interactive</em> — from simple button clicks to complex single-page applications.</p>
+            <p>JavaScript is the <strong>only programming language</strong> that runs natively in all browsers without any installation.</p>
+            <h5 class="mt-4 mb-2">Key Concepts:</h5>
+            <ul class="concept-list">
+              <li><strong>Variables</strong> — <code>let</code>, <code>const</code>, <code>var</code></li>
+              <li><strong>Data Types</strong> — String, Number, Boolean, Array, Object</li>
+              <li><strong>Functions</strong> — Regular &amp; Arrow functions</li>
+              <li><strong>DOM Manipulation</strong> — <code>getElementById</code>, <code>querySelector</code></li>
+              <li><strong>Events</strong> — <code>onclick</code>, <code>addEventListener</code></li>
+              <li><strong>Conditionals</strong> — <code>if/else</code>, <code>switch</code></li>
+              <li><strong>Loops</strong> — <code>for</code>, <code>while</code>, <code>forEach</code></li>
+              <li><strong>Fetch API</strong> — Async HTTP requests</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <!-- Live JS Editor -->
+          <div class="glass-card p-4">
+            <h4 class="mb-3"><i class="bi bi-terminal me-2" style="color:#eab308"></i>Live JavaScript Console</h4>
+            <p class="text-muted small mb-3">Write and run JavaScript code. Output appears in the console below.</p>
+            <div class="editor-pane w-100 mb-2">
+              <div class="editor-header">
+                <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+                <span class="editor-title ms-2">script.js</span>
+              </div>
+              <textarea id="jsEditor" class="code-editor w-100" spellcheck="false" rows="10">// JavaScript Demo: Variables, Functions & DOM
+const greeting = "Hello from JavaScript!";
+console.log(greeting);
+// Array and forEach loop
+const skills = ["HTML", "CSS", "Bootstrap", "JavaScript"];
+console.log("My Skills:");
+skills.forEach((skill, index) => {
+  console.log(`  ${index + 1}. ${skill}`);
+});
+// Arrow function example
+const square = (n) => n * n;
+console.log(`Square of 7 = ${square(7)}`);
+// Object example
+const developer = {
+  name: "Aaryan Chaudhary",
+  role: "Full Stack Developer",
+  greet() {
+    return `Hi, I'm ${this.name}!`;
+  }
+};
+console.log(developer.greet());
+</textarea>
+            </div>
+            <button class="btn btn-sm btn-yellow mb-3" onclick="runJsCode()"><i class="bi bi-play-fill me-1"></i>Run Code</button>
+            <div class="js-console" id="jsConsole">
+              <div class="console-header"><i class="bi bi-terminal me-1"></i>Console Output</div>
+              <div id="consoleOutput" class="console-output"><span class="text-muted">// Run your code to see output here...</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- JS Interactive Demos -->
+      <div class="row g-4 mb-4">
+        <!-- DOM Manipulation Demo -->
+        <div class="col-lg-6">
+          <div class="glass-card p-4 h-100">
+            <h4 class="mb-3"><i class="bi bi-node-plus me-2" style="color:#eab308"></i>DOM Manipulation Demo</h4>
+            <p class="text-muted small">JavaScript can find, modify, and create HTML elements dynamically using the Document Object Model (DOM).</p>
+            <div class="dom-demo-area p-3 rounded mb-3" id="domDemoArea" style="background:rgba(234,179,8,0.08);border:1px dashed rgba(234,179,8,0.3);min-height:100px">
+              <p id="domTarget" class="m-0">I am a paragraph. Use the buttons below to change me!</p>
+            </div>
+            <div class="d-flex flex-wrap gap-2">
+              <button class="btn btn-sm btn-outline-warning" onclick="domChangeText()">Change Text</button>
+              <button class="btn btn-sm btn-outline-warning" onclick="domChangeColor()">Change Color</button>
+              <button class="btn btn-sm btn-outline-warning" onclick="domAddElement()">Add Element</button>
+              <button class="btn btn-sm btn-outline-warning" onclick="domRemoveLast()">Remove Last</button>
+              <button class="btn btn-sm btn-outline-secondary" onclick="domReset()">Reset</button>
+            </div>
+            <div class="mt-3 p-2 rounded" style="background:rgba(0,0,0,0.3)">
+              <small class="text-muted">Current DOM code:</small>
+              <pre class="m-0" style="font-size:0.7rem;color:#fbbf24" id="domCodeDisplay">document.getElementById('domTarget').textContent = '...'</pre>
+            </div>
+          </div>
+        </div>
+        <!-- Event Listeners Demo -->
+        <div class="col-lg-6">
+          <div class="glass-card p-4 h-100">
+            <h4 class="mb-3"><i class="bi bi-cursor me-2" style="color:#eab308"></i>JavaScript Events Demo</h4>
+            <p class="text-muted small">Events let JavaScript respond to user interactions like clicks, mouse moves, key presses, and more.</p>
+            <div class="events-demo-area" id="eventsArea">
+              <div class="event-box" id="eventBox"
+                   onclick="logEvent('click 🖱️')"
+                   onmouseenter="logEvent('mouseenter 👋')"
+                   onmouseleave="logEvent('mouseleave 👋')"
+                   ondblclick="logEvent('dblclick ⚡')">
+                <i class="bi bi-hand-index-thumb"></i>
+                <span>Interact with me!</span>
+                <small>Click, Double-click, or Hover</small>
+              </div>
+              <div class="mt-3">
+                <input type="text" id="keyInput" class="form-control form-control-sm" placeholder="Type here to see keypress events..." oninput="logEvent('input: &quot;' + this.value + '&quot;')">
+              </div>
+              <div class="event-log mt-3" id="eventLog">
+                <div class="event-log-header"><i class="bi bi-activity me-1"></i>Event Log</div>
+                <div id="eventLogList"><span class="text-muted small">Events will appear here...</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Calculator App -->
+      <div class="glass-card p-4 p-md-5 mb-4">
+        <h4 class="demo-title mb-2"><i class="bi bi-calculator me-2" style="color:#eab308"></i>Full JavaScript App — Interactive Calculator</h4>
+        <p class="text-muted small mb-4">A fully working calculator built with JavaScript demonstrating variables, functions, event handling and DOM manipulation.</p>
+        <div class="row justify-content-center">
+          <div class="col-sm-10 col-md-6 col-lg-5">
+            <div class="calculator" id="calculator">
+              <div class="calc-display">
+                <div class="calc-expression" id="calcExpression">0</div>
+                <div class="calc-result" id="calcResult"></div>
+              </div>
+              <div class="calc-buttons">
+                <button class="calc-btn calc-fn" onclick="calcAction('clear')" id="calcClear">AC</button>
+                <button class="calc-btn calc-fn" onclick="calcAction('sign')" id="calcSign">+/−</button>
+                <button class="calc-btn calc-fn" onclick="calcAction('percent')" id="calcPercent">%</button>
+                <button class="calc-btn calc-op" onclick="calcAction('/')" id="calcDiv">÷</button>
+                <button class="calc-btn" onclick="calcAction('7')" id="calc7">7</button>
+                <button class="calc-btn" onclick="calcAction('8')" id="calc8">8</button>
+                <button class="calc-btn" onclick="calcAction('9')" id="calc9">9</button>
+                <button class="calc-btn calc-op" onclick="calcAction('*')" id="calcMul">×</button>
+                <button class="calc-btn" onclick="calcAction('4')" id="calc4">4</button>
+                <button class="calc-btn" onclick="calcAction('5')" id="calc5">5</button>
+                <button class="calc-btn" onclick="calcAction('6')" id="calc6">6</button>
+                <button class="calc-btn calc-op" onclick="calcAction('-')" id="calcSub">−</button>
+                <button class="calc-btn" onclick="calcAction('1')" id="calc1">1</button>
+                <button class="calc-btn" onclick="calcAction('2')" id="calc2">2</button>
+                <button class="calc-btn" onclick="calcAction('3')" id="calc3">3</button>
+                <button class="calc-btn calc-op" onclick="calcAction('+')" id="calcAdd">+</button>
+                <button class="calc-btn calc-zero" onclick="calcAction('0')" id="calc0">0</button>
+                <button class="calc-btn" onclick="calcAction('.')" id="calcDot">.</button>
+                <button class="calc-btn calc-eq" onclick="calcAction('=')" id="calcEq">=</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-7">
+            <h5 class="mb-3">How it Works — JavaScript Concepts Used:</h5>
+            <ul class="concept-list">
+              <li><strong>Variables (<code>let</code>)</strong> — Storing the current expression and operands</li>
+              <li><strong>Functions</strong> — <code>calcAction()</code> handles all button logic</li>
+              <li><strong>Conditionals (<code>switch/if</code>)</strong> — Different behaviour per button type</li>
+              <li><strong>DOM Manipulation</strong> — Updating display elements via <code>getElementById</code></li>
+              <li><strong>String/Number conversion</strong> — <code>parseFloat()</code>, <code>toString()</code></li>
+              <li><strong>Math operations</strong> — <code>eval()</code> and arithmetic operators</li>
+              <li><strong>Event handling</strong> — <code>onclick</code> attribute on each button</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Fetch API Demo -->
+      <div class="glass-card p-4">
+        <h4 class="mb-3"><i class="bi bi-cloud-download me-2" style="color:#eab308"></i>JavaScript Fetch API — Getting Data from the Web</h4>
+        <p class="text-muted small mb-3">The Fetch API allows JavaScript to make <strong>asynchronous HTTP requests</strong> to retrieve data from external sources (APIs) without reloading the page.</p>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="p-3 rounded" style="background:rgba(0,0,0,0.3)">
+              <pre style="font-size:0.78rem;margin:0;color:#fbbf24"><code><span class="c-comment">// Fetch API Example</span>
+<span class="c-kw">fetch</span>(<span class="c-str">'https://api.example.com/data'</span>)
+  .<span class="c-fn">then</span>(response => response.<span class="c-fn">json</span>())
+  .<span class="c-fn">then</span>(data => {
+    <span class="c-var">console</span>.<span class="c-fn">log</span>(data);
+  })
+  .<span class="c-fn">catch</span>(error => {
+    <span class="c-var">console</span>.<span class="c-fn">error</span>(error);
+  });</code></pre>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="small">Click the button to fetch a <strong>random programming quote</strong> from a public API:</p>
+            <button class="btn btn-yellow mb-3" onclick="fetchQuote()" id="fetchBtn">
+              <i class="bi bi-cloud-download me-2"></i>Fetch a Quote
+            </button>
+            <div id="quoteResult" class="quote-display">Quote results will appear here after you click the button.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ======================== CONTACT ======================== -->
+  <section id="contact" class="portfolio-section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-number"><i class="bi bi-envelope-heart"></i></div>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-subtitle">Interested in working together or have a question? I'd love to hear from you.</p>
+      </div>
+      <div class="row justify-content-center g-4">
+        <div class="col-lg-6">
+          <form class="glass-card p-4 p-md-5 contact-form" id="contactForm" onsubmit="submitContact(event)">
+            <div class="alert alert-secondary py-2 px-3 mb-4 small" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);color:var(--text-muted)">
+              <i class="bi bi-info-circle me-2"></i><strong>Demo notice:</strong> This form simulates submission for portfolio purposes. No message is actually sent.
+            </div>
+            <div class="mb-4">
+              <label for="contactName" class="form-label">Your Name</label>
+              <input type="text" id="contactName" class="form-control custom-input" placeholder="e.g. Jane Smith" required />
+            </div>
+            <div class="mb-4">
+              <label for="contactEmail" class="form-label">Email Address</label>
+              <input type="email" id="contactEmail" class="form-control custom-input" placeholder="your@email.com" required />
+            </div>
+            <div class="mb-4">
+              <label for="contactSubject" class="form-label">Subject</label>
+              <input type="text" id="contactSubject" class="form-control custom-input" placeholder="e.g. Job Opportunity" required />
+            </div>
+            <div class="mb-4">
+              <label for="contactMessage" class="form-label">Message</label>
+              <textarea id="contactMessage" class="form-control custom-input" rows="4" placeholder="Tell me about your project or inquiry..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary-glow w-100" id="contactSubmitBtn">
+              <i class="bi bi-send me-2"></i>Send Message
+            </button>
+            <div id="contactResult" class="mt-3"></div>
+          </form>
+        </div>
+        <div class="col-lg-4">
+          <div class="glass-card p-4 h-100">
+            <h4 class="mb-4">Connect With Me</h4>
+            <div class="contact-links">
+              <a href="mailto:aaryan@example.com" class="contact-link-item">
+                <div class="contact-link-icon"><i class="bi bi-envelope-fill"></i></div>
+                <div>
+                  <strong>Email</strong>
+                  <span>aaryan@example.com</span>
+                </div>
+              </a>
+              <a href="#" class="contact-link-item">
+                <div class="contact-link-icon github"><i class="bi bi-github"></i></div>
+                <div>
+                  <strong>GitHub</strong>
+                  <span>github.com/aaryan</span>
+                </div>
+              </a>
+              <a href="#" class="contact-link-item">
+                <div class="contact-link-icon linkedin"><i class="bi bi-linkedin"></i></div>
+                <div>
+                  <strong>LinkedIn</strong>
+                  <span>linkedin.com/in/aaryan</span>
+                </div>
+              </a>
+            </div>
+            <div class="tech-summary mt-4">
+              <h5 class="mb-3">Skills Summary</h5>
+              <div class="skill-bar-item">
+                <div class="d-flex justify-content-between mb-1"><span class="small">HTML</span><span class="small">85%</span></div>
+                <div class="progress" style="height:6px"><div class="progress-bar" style="width:85%;background:linear-gradient(90deg,#f97316,#fb923c)"></div></div>
+              </div>
+              <div class="skill-bar-item mt-2">
+                <div class="d-flex justify-content-between mb-1"><span class="small">CSS</span><span class="small">78%</span></div>
+                <div class="progress" style="height:6px"><div class="progress-bar" style="width:78%;background:linear-gradient(90deg,#3b82f6,#60a5fa)"></div></div>
+              </div>
+              <div class="skill-bar-item mt-2">
+                <div class="d-flex justify-content-between mb-1"><span class="small">Bootstrap</span><span class="small">72%</span></div>
+                <div class="progress" style="height:6px"><div class="progress-bar" style="width:72%;background:linear-gradient(90deg,#7c3aed,#a78bfa)"></div></div>
+              </div>
+              <div class="skill-bar-item mt-2">
+                <div class="d-flex justify-content-between mb-1"><span class="small">JavaScript</span><span class="small">70%</span></div>
+                <div class="progress" style="height:6px"><div class="progress-bar" style="width:70%;background:linear-gradient(90deg,#eab308,#fbbf24)"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <span class="brand-logo"><span class="brand-bracket">&lt;</span>bj20vv_Aaryan Chaudhary<span class="brand-slash">/</span><span class="brand-bracket">&gt;</span></span>
+          <p class="text-muted small mt-2 mb-0">Full Stack Development Portfolio</p>
+          <p class="text-muted small mb-0">&copy; 2026 Aaryan Chaudhary. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <div class="footer-tech-badges">
+            <span class="tech-badge"><i class="bi bi-filetype-html me-1"></i>HTML5</span>
+            <span class="tech-badge"><i class="bi bi-filetype-css me-1"></i>CSS3</span>
+            <span class="tech-badge"><i class="bi bi-bootstrap me-1"></i>Bootstrap 5</span>
+            <span class="tech-badge"><i class="bi bi-filetype-js me-1"></i>JavaScript</span>
+          </div>
+          <p class="text-muted small mt-2 mb-0">Built with <i class="bi bi-heart-fill text-danger"></i> using modern web technologies</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="style.js"></script>
+</body>
+</html>
